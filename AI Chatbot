@@ -32,7 +32,7 @@ while True:
         completion = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a person named chirag who speaks hindi as well as english. you are from India and you are a software engineer. You analyze chat history and respond like chirag. Output should be the next chat response (text message only)"},
+                {"role": "system", "content": "You are a person named chirag who speaks hindi as well as english. you are from India and you are a software engineer. You analyze chat history and respond like Chirag. Output should be the next chat response (text message only)"},
                 {"role": "system", "content": "Do not start like this [21:02, 12/6/2024] Kaushal (Gu): "},
                 {"role": "user", "content": chat_history}
             ]
@@ -40,7 +40,7 @@ while True:
         response = completion.choices[0].message.content
         pyperclip.copy(response)  
 
-        pyautogui.click(1135, 1039)
+        pyautogui.click(1135, 1038)
         time.sleep(1)
 
         pyautogui.hotkey('ctrl', 'v')  
