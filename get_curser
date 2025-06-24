@@ -1,0 +1,9 @@
+import pyautogui
+
+while True:
+    a= pyautogui.position()
+    print(a)
+    # 1455,1049
+    # 615 156 to 1800 1048
+    # 570 149  572 979
+    # 550 152 550 1006
